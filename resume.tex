@@ -1,0 +1,186 @@
+%-------------------------
+% Resume in Latex
+% Author : Ryo Wijaya (Updated using provided template)
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ryo Wijaya} \\ \vspace{2pt}
+    \small Singapore Citizen $|$ +65 8449 9902 $|$ \href{mailto:mainryo@gmail.com}{\underline{mainryo@gmail.com}} \\
+    \vspace{2pt}
+    \small 
+    \textbf{LinkedIn:} \href{https://linkedin.com/in/ryowijaya}{\underline{linkedin.com/in/ryowijaya}} $|$ 
+    \textbf{GitHub:} \href{https://github.com/ryo-wijaya}{\underline{github.com/ryo-wijaya}} $|$ 
+    \textbf{Blog:} \href{https://blog.ryowijaya.me}{\underline{blog.ryowijaya.me}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Singapore $|$ \textnormal{Singapore}}{Aug. 2020 -- June 2024}
+      {Bachelor of Computing, Information Systems (Hons. w/ Distinction) $|$ \textit{FinTech Specialisation}}{}
+    \resumeSubheading
+      {Heidelberg International School $|$ \textnormal{Germany}}{Aug. 2016 -- May 2018}
+      {High School Diploma, International Baccalaureate (IB)}{}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeProjectHeading
+      {\textbf{Software Engineer} $|$ \textnormal{Crédit Agricole Corporate \& Investment Bank}}{July 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Contributed to the design and development of a \textbf{greenfield project} to build modular \textbf{ETL Treatment Chains} using \textbf{Spark Streaming}, \textbf{Spring Boot}, and \textbf{GCP}; developed cloud-enabled Java \textbf{drivers} to ingest, enrich, and distribute Commercial Real Estate Loans and Capital Markets data.}
+        \resumeItem{Developed an internal \textbf{Spring Boot} platform for automated \textbf{JSON $\leftrightarrow$ Avro} conversion, \textbf{Kafka} topic management, \textbf{PostgreSQL} configuration validation and loading, and \textbf{Apache Iceberg DDL} generation; adopted by cross-functional teams in Singapore and Paris.}
+        \resumeItem{Architected and implemented \textbf{OpenID Connect (OIDC) and OAuth2 SSO} authentication for the \textbf{Angular} application platform and developed UI features.}
+        \resumeItem{Implemented schema validation across upstream sources and downstream destinations by utilizing \textbf{Confluent Schema Registry} and \textbf{Kafka}. Managed schema evolution across Avro schema version upgrades.}
+        \resumeItem{Orchestrated deployments using \textbf{Helm}, \textbf{Kubernetes}, and created \textbf{GitLab CI} pipelines to ensure robust CI/CD.}
+        \resumeItem{Contributed to application security by remediating \textbf{Checkmarx} and \textbf{JFrog Xray} vulnerabilities, and enforcing \textbf{SonarQube} quality gates.}
+      \resumeItemListEnd
+      
+    \resumeProjectHeading
+      {\textbf{Software Engineer Intern} $|$ \textnormal{SP Group}}{Jan. 2023 -- June 2023}
+      \resumeItemListStart
+        \resumeItem{Developed an \textbf{OCPP 1.6/2.0.1} compliant electric vehicle charger simulator using \textbf{FastAPI} and \textbf{WebSockets}.}
+        \resumeItem{Led load testing for over \textbf{2,000 simulated chargers} to identify infrastructure scalability bottlenecks.}
+        \resumeItem{Built a \textbf{Next.js} platform for real-time charger configuration, message triggering, and log monitoring.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Software Engineer Intern} $|$ \textnormal{Reluvate Technologies}}{May 2022 -- Aug. 2022}
+      \resumeItemListStart
+        \resumeItem{Developed a hiring web platform using \textbf{Node} and \textbf{GCP Cloud Services} to automate over \textbf{90\%} of company recruitment processes, including document exchange and technical assessments.}
+        \resumeItem{Built a \textbf{Python} backend for an accounting platform product to handle payments and contracts.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Software Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/ryo-wijaya/PetHub}{\textbf{PetHub}} $|$ \emph{Express.js, Next.js, PostgreSQL, Prisma, AWS}}{}
+          \resumeItemListStart
+            \resumeItem{E-commerce marketplace for pet-service providers and owners. Facilitates bookings, purchases, and admin management.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\href{https://github.com/ryo-wijaya/Optimal-Travel-Plan-Final}{\textbf{Optimal Travel Plan}} $|$ \emph{Jakarta EE, JSF, MySQL, Ionic}}{}
+          \resumeItemListStart
+            \resumeItem{Web and hybrid mobile app that generates optimized travel itineraries based on available events/services.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Other Projects}}{}
+          \resumeItemListStart
+            \resumeItem{\href{https://github.com/ryo-wijaya/ibkr-tv-tradebot}{\textbf{ibkr-tv-tradebot}}: FastAPI server utilizing the \textbf{IBKR TWS API} for order execution and \textbf{TradingView} integration.}
+            \resumeItem{\href{https://github.com/ryo-wijaya/my-pi-dashboard}{\textbf{my-pi-board}}: Next.js application for bus timings and stock market monitoring that lives on my Raspberry Pi.}
+            \resumeItem{\href{https://blog.ryowijaya.me}{\textbf{blog}}: Personal blog utilizing Jekyll and \textbf{GitHub Actions} for automated CI/CD deployment.}
+            \resumeItem{\textbf{RAG System}: FastAPI application using \textbf{LangGraph} and \textbf{Qdrant} to implement hybrid (vector + BM25) search.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, JavaScript/TypeScript, HTML/XHTML, SQL} \\
+     \textbf{Technologies}{: Spring Boot, Apache Kafka (Confluent), Apache Spark, Apache Iceberg, FastAPI, Next.js, React.js, Node.js, Angular, PostgreSQL, NoSQL Databases, Liquibase, JEE/JSF, OCPP} \\
+     \textbf{Infrastructure \& Tools}{: Kubernetes, Helm, Docker, GitLab CI/CD, Git, Google Cloud Platform (Cloud Run, Artifact Registry, GKE, Compute Engine, Cloud Storage, Cloud SQL, etc), Azure (VM, AKS, Functions, Cosmos DB, Storage, etc)} \\
+     \textbf{AI Engineering}{: RAG, LangGraph, LangChain, Qdrant, Ollama} \\
+     \textbf{Interests}{: Electric Guitar, Piano, Drums, Music Production} \\
+     \textbf{Communication}{: English (Native), German (Conversational), Mandarin (Conversational)}
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Certified Kubernetes Application Developer (CKAD) - 98/100} $|$ \emph{Cloud Native Computing Foundation}}{2025}
+      \resumeProjectHeading
+          {\textbf{Confluent Apache Kafka Fundamentals Accreditation} $|$ \emph{Confluent}}{2026}
+      \resumeProjectHeading
+          {\textbf{Financial Technology Specialisation (Distinction)} $|$ \emph{National University of Singapore}}{2024}
+      \resumeProjectHeading
+          {\textbf{IS Technology Knowledge Area (Distinction)} $|$ \emph{National University of Singapore}}{2024}
+    \resumeSubHeadingListEnd
+
+\end{document}
