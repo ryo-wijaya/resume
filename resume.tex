@@ -106,8 +106,8 @@
 \resumeProjectHeading
       {\textbf{Software Engineer} $|$ \textnormal{Crédit Agricole Corporate \& Investment Bank}}{July 2024 -- Present}
       \resumeItemListStart
-        \resumeItem{Contributed to the design and development of a \textbf{greenfield project} to build modular \textbf{ETL Treatment Chains} using \textbf{Spark Streaming}, \textbf{Spring Boot}, and \textbf{GCP}; developed cloud-enabled Java \textbf{drivers} to ingest, enrich, and distribute Commercial Real Estate Loans and Capital Markets data.}
-        \resumeItem{Developed an internal \textbf{Spring Boot} platform for automated \textbf{JSON $\leftrightarrow$ Avro} conversion, \textbf{Kafka} topic management, \textbf{PostgreSQL} configuration validation and loading, and \textbf{Apache Iceberg DDL} from Avro schema generation; adopted by cross-functional teams in Singapore and Paris.}
+        \resumeItem{Contributed to the design and development of a \textbf{greenfield project} to build modular \textbf{ETL Treatment Chains} using \textbf{Spark Streaming}, \textbf{Spring Boot}, and \textbf{GCP}; developed cloud-enabled Java \textbf{drivers} to ingest, enrich, and distribute Commercial Real Estate Loans, ESG, and Capital Markets data.}
+        \resumeItem{Owner and main contributor (7 out of 9 core modules) of a \textbf{Spring Boot} DevTools platform for automated \textbf{JSON $\leftrightarrow$ Avro} conversion, \textbf{Kafka} topic management, \textbf{PostgreSQL} configuration validation and loading, and \textbf{Apache Iceberg} DDL from Avro schema generation; accelerating cross-functional delivery for teams in Singapore and Paris.}
         \resumeItem{Architected and implemented \textbf{OpenID Connect (OIDC) and OAuth2 SSO} authentication for the \textbf{Angular} application platform and developed UI features.}
         \resumeItem{Implemented schema validation across upstream sources and downstream destinations by utilizing \textbf{Confluent Schema Registry} and \textbf{Kafka}. Managed schema evolution across Avro schema version upgrades.}
         \resumeItem{Orchestrated deployments using \textbf{Helm}, \textbf{Kubernetes}, and created \textbf{GitLab CI} pipelines to ensure robust CI/CD.}
@@ -136,33 +136,38 @@
 \section{Software Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\href{https://github.com/IS4103-PetHub/PetHub-FE}{\textbf{PetHub}} $|$ \emph{Express.js, Next.js, PostgreSQL, Prisma, AWS}}{}
-          \resumeItemListStart
-            \resumeItem{E-commerce marketplace for pet-service providers and owners. Facilitates bookings, purchases, and admin management.}
-          \resumeItemListEnd
+          {\textbf{FinRAG} $|$ \emph{FastAPI, LangGraph, Qdrant, Next.js} $|$ Hybrid (vector + BM25) document search and analysis for financial data}{}
           
       \resumeProjectHeading
-          {\href{https://github.com/ryo-wijaya/Optimal-Travel-Plan}{\textbf{Optimal Travel Plan}} $|$ \emph{Jakarta EE, JSF, MySQL, Ionic}}{}
-          \resumeItemListStart
-            \resumeItem{Web and hybrid mobile app that generates optimized travel itineraries based on available events/services.}
-          \resumeItemListEnd
+          {\href{https://github.com/IS4103-PetHub/PetHub-FE}{\textbf{PetHub}} $|$ \emph{Express.js, Next.js, PostgreSQL, Prisma, AWS} $|$ Fully featured E-commerce pet-service marketplace}{}
+          
+      \resumeProjectHeading
+          {\href{https://github.com/ryo-wijaya/Optimal-Travel-Plan}{\textbf{Optimal Travel Plan}} $|$ \emph{Jakarta EE, JSF, MySQL, Ionic} $|$ Optimized travel itinerary generation app}{}
 
       \resumeProjectHeading
-          {\textbf{Other Projects}}{}
-          \resumeItemListStart
-            \resumeItem{\href{https://github.com/ryo-wijaya/ibkr-tv-tradebot}{\textbf{ibkr-tv-tradebot}}: FastAPI server utilizing the \textbf{IBKR TWS API} for order execution and \textbf{TradingView} integration.}
-            \resumeItem{\href{https://github.com/ryo-wijaya/my-pi-board}{\textbf{my-pi-board}}: Next.js application for bus timings and stock market monitoring that lives on my Raspberry Pi.}
-            \resumeItem{\href{https://ryo-wijaya.me}{\textbf{portfolio}} and \href{https://blog.ryo-wijaya.me}{\textbf{blog}}: Utilizing React and Jekyll respectively, with \textbf{GitHub Actions} for automated CI/CD deployment.}
-            \resumeItem{\textbf{RAG System}: FastAPI application using \textbf{LangGraph} and \textbf{Qdrant} to implement hybrid (vector + BM25) search.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+          {\href{https://github.com/ryo-wijaya/my-pi-board}{\textbf{my-pi-board}} $|$ \emph{Next.js} $|$ Bus timings and stock market monitoring dashboard that lives on my Raspberry Pi}{}
 
+      \resumeProjectHeading
+          {\href{https://ryo-wijaya.me}{\textbf{ryo}} $|$ \emph{React, Vite, Bootstrap} $|$ Personal portfolio website}{}
+
+      \resumeProjectHeading
+          {\href{https://blog.ryo-wijaya.me}{\textbf{blog}} $|$ \emph{Jekyll, GitHub Actions} $|$ Tech, finance, and hobby blog utilizing the open-source Chirpy theme}{}
+
+      \resumeProjectHeading
+          {\href{https://github.com/ryo-wijaya/HotelReservationProject}{\textbf{HotelReservationProject}} $|$ \emph{Jakarta EE, SOAP} $|$ Enterprise hotel management and reservation system CLI}{}
+
+      \resumeProjectHeading
+          {\href{https://github.com/ryo-wijaya/sprout}{\textbf{sprout}} $|$ \emph{Solidity, Truffle, Web3.js} $|$ Blockchain job marketplace with DAO dispute resolution}{}
+
+      \resumeProjectHeading
+          {\href{https://github.com/ryo-wijaya/ibkr-tv-tradebot}{\textbf{ibkr-tv-tradebot}} $|$ \emph{FastAPI, IBKR TWS API} $|$ Tradebot for order execution and TradingView integration}{}
+    \resumeSubHeadingListEnd
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, JavaScript/TypeScript, HTML/XHTML, SQL} \\
-     \textbf{Technologies}{: Spring Boot, Apache Kafka (Confluent), Apache Spark, Apache Iceberg, FastAPI, Next.js, React.js, Node.js, Angular, PostgreSQL, NoSQL Databases, Liquibase, JEE/JSF, OCPP} \\
+     \textbf{Languages}{: Java, Python, JavaScript/TypeScript, HTML, SQL} \\
+     \textbf{Technologies}{: Spring Boot, Apache Kafka (Confluent), Apache Spark, Apache Iceberg, FastAPI, Next.js, React.js, Node.js, Angular, PostgreSQL, NoSQL Databases, Jakarta EE, Jakarta Server Faces, OCPP} \\
      \textbf{Infrastructure \& Tools}{: Kubernetes, Helm, Docker, GitLab CI/CD, Git, Google Cloud Platform (Cloud Run, Artifact Registry, GKE, Compute Engine, Cloud Storage, Cloud SQL, etc), Azure (VM, AKS, Functions, Cosmos DB, Storage, etc)} \\
      \textbf{AI Engineering}{: RAG, LangGraph, LangChain, Qdrant, Ollama} \\
      \textbf{Interests}{: Electric Guitar, Piano, Drums, Music Production} \\
