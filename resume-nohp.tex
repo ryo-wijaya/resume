@@ -29,8 +29,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.15in}
 
 \urlstyle{same}
 
@@ -106,13 +106,15 @@
 \resumeProjectHeading
       {\textbf{Software Engineer} $|$ \textnormal{Crédit Agricole Corporate \& Investment Bank}}{July 2024 -- Present}
       \resumeItemListStart
-        \resumeItem{Contributed to the design and development of a \textbf{greenfield project} to build modular \textbf{ETL Treatment Chains} using \textbf{Spark Streaming}, \textbf{Spring Boot}, and \textbf{GCP}; developed cloud-enabled Java \textbf{drivers} to ingest, enrich, and distribute Commercial Real Estate Loans, ESG, and Capital Markets data.}
+        \resumeItem{As a founding engineer on a \textbf{greenfield project}, built modular \textbf{ETL Treatment Chains} using \textbf{Spark Streaming}, \textbf{Spring Boot}, and \textbf{Google Cloud Platform}; developed and maintained Java drivers across a suite of 22+ ingestion, enrichment, and distribution pipelines spanning Commercial Real Estate Loans, ESG, and Capital Markets data.}
+        \resumeItem{Developed, tested, and shipped REST APIs and backend features across the core \textbf{Spring Boot} applications, delivering functionality spanning security integrations, configuration management, and \textbf{Kafka}-based messaging.}
         \resumeItem{Owner and main contributor (7 of 9 core modules) of an internal \textbf{Spring Boot} DevTools platform covering automated \textbf{JSON $\leftrightarrow$ Avro} conversion, \textbf{Kafka} topic management, and \textbf{Apache Iceberg} DDL generation from Avro schemas.}
-        \resumeItem{Built a configuration validation and loading platform adopted across teams in Singapore and Paris to manage application inputs, reducing manual validation overhead and accelerating development and UAT cycles.}
-        \resumeItem{Architected and implemented \textbf{OpenID Connect (OIDC) and OAuth2 SSO} authentication for the \textbf{Angular} application platform and developed UI features.}
-        \resumeItem{Implemented schema validation across upstream sources and downstream destinations by utilizing \textbf{Confluent Schema Registry} and \textbf{Kafka}. Managed schema evolution across Avro schema version upgrades.}
-        \resumeItem{Orchestrated deployments using \textbf{Helm}, \textbf{Kubernetes}, and created \textbf{GitLab CI} pipelines to ensure robust CI/CD.}
-        \resumeItem{Contributed to application security by remediating \textbf{Checkmarx} and \textbf{JFrog Xray} vulnerabilities, and enforcing \textbf{SonarQube} quality gates.}
+        \resumeItem{Developed a configuration validation and loading platform adopted across teams in Singapore and Paris to manage application inputs, reducing manual validation overhead and accelerating development and UAT cycles.}
+        \resumeItem{Architected and implemented \textbf{OpenID Connect (OIDC) and OAuth2 SSO} authentication for the \textbf{Angular} application platform; also developed UI features.}
+        \resumeItem{Engineered Java Avro deserializers and schema validation pipelines across both \textbf{Spring Kafka} and \textbf{Spark Kafka} consumers, integrating with Confluent Schema Registry to enforce strict schema contracts and eliminate non-compliant ingestion.}
+        \resumeItem{Managed end-to-end Avro schema versioning cycles, propagating changes across pipeline components and coordinating upstream/downstream integration teams through SIT to ensure pipeline integrity for UAT and production releases.}
+        \resumeItem{Designed and maintained \textbf{GitLab CI} pipelines covering automated build, test, \textbf{Docker} image builds, and staging/stable registry promotions; orchestrated application deployments using \textbf{Helm} and \textbf{Kubernetes}.}
+        \resumeItem{Strengthened application security by remediating \textbf{Checkmarx} and \textbf{JFrog Xray} vulnerabilities and enforcing \textbf{SonarQube} quality gates across all feature deployments and targeted large-scale remediation efforts.}
       \resumeItemListEnd
       
     \resumeProjectHeading
@@ -127,14 +129,14 @@
       {\textbf{Software Engineer Intern} $|$ \textnormal{Reluvate Technologies}}{May 2022 -- Aug. 2022}
       \resumeItemListStart
         \resumeItem{Developed a hiring web platform using \textbf{Node} and \textbf{GCP Cloud Services} to automate over \textbf{90\%} of company recruitment processes, including document exchange and technical assessments.}
-        \resumeItem{Built a \textbf{Python} backend for an accounting platform product to handle payments and contracts.}
+        \resumeItem{Built a \textbf{Python} backend for an accounting platform to handle payments and contracts.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
-\section{Software Projects}
+\section{Personal Software Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
           {\textbf{FinAI} $|$ \emph{LangGraph, Qdrant, GCP} $|$ Multi-tenant AI financial platform with KPI extraction, compliance gap analysis, and copilot}{}
@@ -146,13 +148,10 @@
           {\href{https://github.com/IS4103-PetHub/PetHub-FE}{\textbf{PetHub}} $|$ \emph{Express.js, Next.js, PostgreSQL, Prisma, AWS} $|$ Fully featured E-commerce pet-service marketplace}{}
           
       \resumeProjectHeading
-          {\href{https://github.com/ryo-wijaya/Optimal-Travel-Plan}{\textbf{Optimal Travel Plan}} $|$ \emph{Jakarta EE, JSF, MySQL, Ionic} $|$ Optimized travel itinerary generation app}{}
+          {\href{https://github.com/ryo-wijaya/Optimal-Travel-Plan}{\textbf{Optimal Travel Plan}} $|$ \emph{Jakarta EE, MySQL, Ionic} $|$ Optimized travel itinerary generation app}{}
 
       \resumeProjectHeading
-          {\href{https://ryo-wijaya.me}{\textbf{ryo}} $|$ \emph{React, Vite, Bootstrap} $|$ Personal portfolio website}{}
-
-      \resumeProjectHeading
-          {\href{https://blog.ryo-wijaya.me}{\textbf{blog}} $|$ \emph{Jekyll, GitHub Actions} $|$ Tech, finance, and hobby blog utilizing the open-source Chirpy theme}{}
+          {\href{https://ryo-wijaya.me}{\textbf{ryo}} \& \href{https://blog.ryo-wijaya.me}{\textbf{blog}} $|$ \emph{React, JavaScript, Vite} $|$ Portfolio website and tech blog}{}
 
       \resumeProjectHeading
           {\href{https://github.com/ryo-wijaya/ibkr-tv-tradebot}{\textbf{ibkr-tv-tradebot}} $|$ \emph{FastAPI, IBKR TWS API} $|$ Tradebot for order execution and TradingView integration}{}
@@ -162,7 +161,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Java, Python, JavaScript/TypeScript, HTML, SQL} \\
-     \textbf{Technologies}{: Spring Boot, Apache Kafka (Confluent), Apache Spark, Apache Iceberg, FastAPI, Next.js, React.js, Node.js, Angular, PostgreSQL, NoSQL Databases, Jakarta EE, Jakarta Server Faces, OCPP} \\
+     \textbf{Technologies}{: Spring Boot, Apache Kafka (Confluent), Apache Spark, Apache Iceberg, FastAPI, Next.js, React.js, Node.js, Angular, PostgreSQL, NoSQL Databases, Jakarta EE} \\
      \textbf{Infrastructure \& Tools}{: Kubernetes, Helm, Docker, GitLab CI/CD, Git, Google Cloud Platform (Cloud Run, Artifact Registry, GKE, Compute Engine, Cloud Storage, Cloud SQL, etc), Azure (VM, AKS, Functions, Cosmos DB, Storage, etc)} \\
      \textbf{AI Engineering}{: RAG, LangGraph, LangChain, Qdrant, Ollama} \\
      \textbf{Interests}{: Electric Guitar, Piano, Drums, Music Production} \\
@@ -179,8 +178,5 @@
           {\href{https://certificates.confluent.io/a29862ce-da30-4aba-b353-b97b38259964}{\textbf{Confluent Apache Kafka Fundamentals Accreditation}} $|$ \emph{Confluent}}{2026}
       \resumeProjectHeading
           {\href{https://credentials.nus.edu.sg/b00bb0ae-8419-4336-b33e-afb88d5cc582}{\textbf{Financial Technology Specialisation (Distinction)}} $|$ \emph{National University of Singapore}}{2024}
-      \resumeProjectHeading
-          {\href{https://credentials.nus.edu.sg/af73a852-f403-4262-ba54-cb15b6a68ccd}{\textbf{IS Technology Knowledge Area (Distinction)}} $|$ \emph{National University of Singapore}}{2024}
     \resumeSubHeadingListEnd
-
 \end{document}
