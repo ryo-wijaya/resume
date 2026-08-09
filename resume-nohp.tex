@@ -26,11 +26,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.6in}
-\addtolength{\textheight}{1.15in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.25in}
 
 \urlstyle{same}
 
@@ -64,7 +64,7 @@
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-3pt}
 }
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
@@ -82,21 +82,23 @@
     \textbf{\Huge \scshape Ryo Wijaya} \\ \vspace{2pt}
     \small Singapore Citizen $|$ \href{mailto:contact.ryowijaya@gmail.com}{\underline{contact.ryowijaya@gmail.com}} \\
     \vspace{2pt}
-    \small 
-    \textbf{LinkedIn:} \href{https://linkedin.com/in/ryowijaya}{\underline{linkedin.com/in/ryowijaya}} $|$ 
-    \textbf{GitHub:} \href{https://github.com/ryo-wijaya}{\underline{github.com/ryo-wijaya}} $|$ 
+    \small
+    \textbf{LinkedIn:} \href{https://linkedin.com/in/ryowijaya}{\underline{linkedin.com/in/ryowijaya}} $|$
+    \textbf{GitHub:} \href{https://github.com/ryo-wijaya}{\underline{github.com/ryo-wijaya}} $|$
     \textbf{Website:} \href{https://ryo-wijaya.me}{\underline{ryo-wijaya.me}}
 \end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+    \small{Software Engineer with 3+ years building distributed, cloud-native backend systems and event-driven ETL pipelines (Spring Boot, Kafka, Spark, Kubernetes, GCP) in fintech; skilled in microservices architecture, DevOps, and AI engineering.}
+    \vspace{-8pt}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {National University of Singapore $|$ \textnormal{Singapore}}{Aug. 2020 -- June 2024}
+      {National University of Singapore (NUS) $|$ \textnormal{Singapore}}{Aug. 2020 -- June 2024}
       {Bachelor of Computing, Information Systems (Hons. w/ Distinction) $|$ \textit{FinTech Specialisation}}{}
-    \resumeSubheading
-      {Heidelberg International School $|$ \textnormal{Germany}}{Aug. 2016 -- May 2018}
-      {International Baccalaureate (IB) Diploma}{}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
@@ -120,16 +122,15 @@
     \resumeProjectHeading
       {\textbf{Software Engineer Intern} $|$ \textnormal{SP Group}}{Jan. 2023 -- June 2023}
       \resumeItemListStart
-        \resumeItem{Developed an \textbf{OCPP 1.6/2.0.1} compliant electric vehicle charger simulator using \textbf{FastAPI} and \textbf{WebSockets}.}
-        \resumeItem{Led load testing for over \textbf{2,000 simulated chargers} to identify infrastructure scalability bottlenecks.}
+        \resumeItem{Developed an \textbf{OCPP 1.6/2.0.1} EV charger simulator (\textbf{FastAPI}, \textbf{WebSockets}); load tested \textbf{2,000+} chargers.}
         \resumeItem{Built a \textbf{Next.js} platform for real-time charger configuration, message triggering, and log monitoring.}
       \resumeItemListEnd
 
     \resumeProjectHeading
       {\textbf{Software Engineer Intern} $|$ \textnormal{Reluvate Technologies}}{May 2022 -- Aug. 2022}
       \resumeItemListStart
-        \resumeItem{Developed a hiring web platform using \textbf{Node} and \textbf{GCP Cloud Services} to automate over \textbf{90\%} of company recruitment processes, including document exchange and technical assessments.}
-        \resumeItem{Built a \textbf{Python} backend for an accounting platform to handle payments and contracts.}
+        \resumeItem{Built a hiring platform (\textbf{Node}, \textbf{GCP}) automating \textbf{90\%+} of recruitment: document exchange and assessments.}
+        \resumeItem{Built a \textbf{Python serverless} backend for an accounting platform to handle payments and contracts.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -139,6 +140,9 @@
 \section{Personal Software Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
+          {\href{https://driftdigest.com}{\textbf{Drift}} $|$ \emph{FastAPI, Next.js, Postgres, GCP} $|$ AI-narrated portfolio digest for retail investors and traders}{}
+
+      \resumeProjectHeading
           {\textbf{FinAI} $|$ \emph{LangGraph, Qdrant, GCP} $|$ Multi-tenant AI financial platform with KPI extraction, compliance gap analysis, and copilot}{}
 
       \resumeProjectHeading
@@ -146,25 +150,18 @@
 
       \resumeProjectHeading
           {\href{https://github.com/IS4103-PetHub/PetHub-FE}{\textbf{PetHub}} $|$ \emph{Express.js, Next.js, PostgreSQL, Prisma, AWS} $|$ Fully featured E-commerce pet-service marketplace}{}
-          
-      \resumeProjectHeading
-          {\href{https://github.com/ryo-wijaya/Optimal-Travel-Plan}{\textbf{Optimal Travel Plan}} $|$ \emph{Jakarta EE, MySQL, Ionic} $|$ Optimized travel itinerary generation app}{}
 
       \resumeProjectHeading
           {\href{https://ryo-wijaya.me}{\textbf{ryo}} \& \href{https://blog.ryo-wijaya.me}{\textbf{blog}} $|$ \emph{React, JavaScript, Vite} $|$ Portfolio website and tech blog}{}
-
-      \resumeProjectHeading
-          {\href{https://github.com/ryo-wijaya/ibkr-tv-tradebot}{\textbf{ibkr-tv-tradebot}} $|$ \emph{FastAPI, IBKR TWS API} $|$ Tradebot for order execution and TradingView integration}{}
     \resumeSubHeadingListEnd
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Java, Python, JavaScript/TypeScript, HTML, SQL} \\
-     \textbf{Technologies}{: Spring Boot, Apache Kafka (Confluent), Apache Spark, Apache Iceberg, FastAPI, Next.js, React.js, Node.js, Angular, PostgreSQL, NoSQL Databases, Jakarta EE} \\
-     \textbf{Infrastructure \& Tools}{: Kubernetes, Helm, Docker, GitLab CI/CD, Git, Google Cloud Platform (Cloud Run, Artifact Registry, GKE, Compute Engine, Cloud Storage, Cloud SQL, etc), Azure (VM, AKS, Functions, Cosmos DB, Storage, etc)} \\
-     \textbf{AI Engineering}{: RAG, LangGraph, LangChain, Qdrant, Ollama} \\
-     \textbf{Interests}{: Electric Guitar, Piano, Drums, Music Production} \\
+     \textbf{Technologies}{: Spring Boot, Apache Kafka (Confluent), Apache Spark, Apache Iceberg, Avro, ETL, RESTful APIs, FastAPI, Next.js, React.js, Node.js, Angular, PostgreSQL, Jakarta EE, JUnit, LangGraph, LangChain, Qdrant, Ollama} \\
+     \textbf{Infrastructure \& Tools}{: DevOps, Kubernetes, Helm, Docker, Containerization, GitLab CI, CI/CD, Git, Maven, Linux, Google Cloud Platform (GCP), GKE, GCS, Cloud Run, Azure, SonarQube, Checkmarx, JFrog Xray} \\
+     \textbf{Others}{: Microservices Architecture, Event-Driven Architecture, Distributed Systems, OIDC/OAuth2, RAG, Agile, Scrum} \\
      \textbf{Communication}{: English (Native), German (Conversational), Mandarin (Conversational)}
     }}
  \end{itemize}
